@@ -1,0 +1,27 @@
+.animacionScroll{
+    height: 100%;
+    width: 100%;
+    overflow: hidden !important;
+    display: inline-flex;
+}
+
+.marginScrolls{
+    margin: 0 8px;
+    background: url('../../../assets/logos/ScrollSitta.png');
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    background-size: 45px auto;
+    width: 45px;
+    animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+    from { background-position: left 0; }
+    to { background-position: left -1790px; }
+}
+
+/*.scrollImg{*/
+    /*background: url('../../../assets/logos/textoSimpleScrollSimple.png') repeat-y;*/
+    /*background-size: 50px auto;*/
+    /*height: 1000%;*/
+/*}*/

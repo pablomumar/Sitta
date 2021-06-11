@@ -1,0 +1,126 @@
+.allContainer{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.textContainer{
+    width: 85vw;
+    max-width: 85vw;
+    padding: 20px 50px 40px 8vw;
+    height: max-content;
+/*
+    -webkit-animation: transit 2s;
+    -moz-animation: transit 2s;
+    -o-animation: transit 2s;
+    animation: transit 2s;*/
+}
+.containerHeader{
+    width: 100%;
+    height: 40vw;
+    position: relative;
+}
+.containerHeader .blackTitle{
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+.containerHeader .blackTitle p{
+    color: white;
+    margin-left: 5%;
+    margin-top: 2%;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: 24px;
+    font-weight: 800;
+}
+.containerHeader .divImg{
+    height: 87%;
+    width: 92%;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    background-color: white;
+    border: black 1px solid;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.containerHeader .divImg img{
+    width: 100%;
+    height: auto;
+}
+
+/* -- Si tiene texto -- */
+.containerHeader .divImg p{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+/* -- Si tiene texto FIN -- */
+
+/* -- FLECHA --  */
+.containerHeader>p{
+    position: absolute;
+    /*top: 50%;
+    right: -2%;
+    */
+    top: 5%;
+    right: 6%;
+
+}
+
+.containerText{
+    width: 100%;
+    height: 100%;
+    padding: 10vh 10px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg) scale(3);
+    -webkit-transform: rotate(-45deg) scale(3);
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+.arrow:hover {
+    border: solid #4d4d4d;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg) scale(3.4);
+    -webkit-transform: rotate(-45deg) scale(3.4);
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+/* -- ANIMATION -- */
+@keyframes transit {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes transit-arrow {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.transicion{
+    -webkit-animation: transit-arrow 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: transit-arrow 1s; /* Firefox < 16 */
+    -o-animation: transit-arrow 1s; /* Opera < 12.1 */
+    animation: transit-arrow 1s;
+}

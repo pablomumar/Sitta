@@ -1,0 +1,6 @@
+html, body{
+    min-height: 100vh;
+    height: max-content;
+    width: 100%;
+    background-color: white;
+}

@@ -1,0 +1,21 @@
+.contConstruct{
+    width: 100%;
+    height: calc(100vh - 19vh);
+    position: relative;
+}
+
+.contConstruct div{
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contConstruct p{
+    color: whitesmoke;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: 200;
+    line-height: 36px;
+    text-align: center;
+}

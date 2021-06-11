@@ -1,0 +1,71 @@
+.main{
+    width:100%;
+    display: flex;
+    height: 20vh;
+}
+.menuWrapper{
+    width: 85%;
+    min-height: 8vh;
+    height: 100%;
+    margin: 0 auto;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linksWrapper{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+}
+
+.linksWrapper div{
+    height: max-content;
+}
+
+.menuitem{
+    position: relative; /*relative para efecto underline*/
+}
+
+.menuitem a{
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+}
+.menuitem a:hover{
+    text-decoration: none;
+}
+
+/*Effect underline links*/
+.menuitem a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -1px;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.menuitem a:hover:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+/*Effect underline links  - END */
+
+.linkImg div{
+    width: max-content;
+    height: max-content;
+}
+
+.linkImg div img{
+    height: 11vh;
+    width: auto;
+}
